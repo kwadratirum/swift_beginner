@@ -1,18 +1,23 @@
 import UIKit
 
-// Task 7
+var str = "Hello World"
+
+var agef = 21
+agef = 22
+
+//: Task 7
 
 let myConst = "this is my first const"
 
-// Task 8
+//: Task 8
 
 var myVariable = 1408
 
-// Task 10
+//: Task 10
 
 print(myConst)
 
-// Task 11
+//: Task 11
 
 var age = 19
 print(age)
