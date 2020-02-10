@@ -9,19 +9,23 @@ enum Body {
 }
 
 enum Transmission {
-    case manual, auto
+    case manual
+    case auto
 }
 
 enum Starter {
-    case turnOn, turnOff
+    case turnOn
+    case turnOff
 }
 
 enum Window {
-    case open, close
+    case open
+    case close
 }
 
 enum Boot {
-    case full, notFull
+    case full
+    case notFull
 }
 
 // Cars' structure
@@ -40,6 +44,9 @@ struct Car {
     var window: Window
 }
 
-let car1 = Car(brand: "Toyota", model: "Rav4", body: .hatchback, color: .gray, transmission: .manual, year: 2019, bootV: .notFull, starter: .turnOff, window: .close)
+var car1 = Car(brand: "Toyota", model: "Rav4", body: .hatchback, color: .gray, transmission: .manual, year: 2019, bootV: .notFull, starter: .turnOff, window: .close)
 
 print(car1)
+
+car1.starter = .turnOn
+print(car1.starter)
